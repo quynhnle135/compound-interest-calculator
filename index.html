@@ -8,19 +8,23 @@
 <body>
     <h1>Interest Calculator</h1>
     <div class="container">
-        <div class="row investment">
-            <label for="invest">Initial Investment: </label>
-            <input type="number" id="investment">
-        </div>
-        <div class="row interest">
-            <label for="interest">Interest Rate: </label>
-            <input type="number" name="interest" id="interest">
+        <div class="row initial">
+            <label for="inital">Initial Principal Amount: </label>
+            <input type="number" name="initial" id="initial">
         </div>
         <div class="row contribution">
             <label for="contribution">Monthly Contribution: </label>
-            <input type="number" name="contribution" id="contribution">
+            <input type="number" id="contribution">
         </div>
-        <button id="calculate">Calculate</button>
+        <div class="row interest">
+            <label for="interest">Interest Rate (%/year): </label>
+            <input type="number" name="interest" id="interest">
+        </div>
+        <div>
+            <label for="length">Investment Length (years): </label>
+            <input type="number" name="length" id="length">
+        </div>
+        <button id="calculate" onclick="calculateInterest()">Calculate</button>
         <h3 id="result"></h3>
     </div>
 
