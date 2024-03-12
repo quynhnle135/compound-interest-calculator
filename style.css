@@ -14,7 +14,7 @@ form {
 .calculator-container {
     display: flex;
     margin: auto;
-    min-height: 45vh;
+    min-height: 50vh;
     width: 350px;
     border-radius: 10px;
     align-items: center;
