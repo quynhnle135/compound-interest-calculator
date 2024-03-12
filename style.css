@@ -1,0 +1,44 @@
+* {
+    font-family: "Space Grotesk", sans-serif;
+}
+.header {
+    text-align: center;
+    padding: 20px;
+    color: #E8751A;
+}
+
+form {
+    width: 80%;
+}
+
+.calculator-container {
+    display: flex;
+    margin: auto;
+    min-height: 45vh;
+    width: 350px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #FFF3C7;
+}
+
+.form-group {
+    padding: 10px 0px;
+}
+
+button {
+    padding: 5px 20px;
+    border: none;
+    background-color: #E8751A;
+    color: #fff;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+.result {
+    width: 100%;
+    margin: 20px 0px;
+    background-color: #fff;
+    color: #D04848;
+}
+

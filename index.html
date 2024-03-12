@@ -3,30 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Connect Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Connected Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <title>Interest Calculator</title>
 </head>
 <body>
-    <h1>Interest Calculator</h1>
-    <div class="container">
-        <div class="row initial">
-            <label for="inital">Initial Principal Amount: </label>
-            <input type="number" name="initial" id="initial">
+    <h1 class="header">Interest Calculator</h1>
+    <div class="main">
+        <div class="calculator-container">
+            <form class="form-container">
+                <div class="form-group inital">
+                    <label for="inital">Initial Principal Amount ($): </label>
+                    <input class="form-control" type="number" name="initial" id="initial">
+                </div>
+                <div class="form-group contribution">
+                    <label for="contribution">Monthly Contribution ($): </label>
+                    <input class="form-control" type="number" id="contribution">
+                </div>
+                <div class="form-group interest">
+                    <label for="interest">Interest Rate (% / year): </label>
+                    <input class="form-control" type="number" name="interest" id="interest">
+                </div>
+                <div class="form-group length">
+                    <label for="length">Investment Length (years): </label>
+                    <input class="form-control" type="number" name="length" id="length">
+                </div>
+                <button type="button" class="button" id="calculate" onclick="calculateInterest()">Calculate</button>
+                <h3 class="result" id="result"></h3>
+                <i><a href="calculatecontribution.html">Calculate Monthly Contribute</a></i>
+            </form>
         </div>
-        <div class="row contribution">
-            <label for="contribution">Monthly Contribution: </label>
-            <input type="number" id="contribution">
-        </div>
-        <div class="row interest">
-            <label for="interest">Interest Rate (%/year): </label>
-            <input type="number" name="interest" id="interest">
-        </div>
-        <div>
-            <label for="length">Investment Length (years): </label>
-            <input type="number" name="length" id="length">
-        </div>
-        <button id="calculate" onclick="calculateInterest()">Calculate</button>
-        <h3 id="result"></h3>
-        <a href="calculatecontribution.html">Calculate Monthly Contribute</a>
     </div>
 
     <!-- Add Script -->

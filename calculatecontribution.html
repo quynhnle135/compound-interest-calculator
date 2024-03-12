@@ -3,32 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Connect Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Connected Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <title>Monthly Contibution Calculator</title>
 </head>
 <body>
-    <h1>Calculate Monthly Contribution</h1>
-    <div class="container">
-        <div class="row principal">
-            <label for="principal">Initial Principal Amount: </label>
-            <input type="number" name="principal" id="principal">
-        </div>
-        <div class="row rate">
-            <label for="rate">Interest Rate (%/year): </label>
-            <input type="number" name="rate" id="rate">
-        </div>
-        <div class="row period">
-            <label for="period">Investment Length (years): </label>
-            <input type="number" name="period" id="period">
-        </div>
-        <div class="row expected">
-            <label for="expected">Exepcted Future Value: </label>
-            <input type="number" name="expected" id="expected">
-        </div>
-        <button type="button" id="calculateContribution" onclick="calculateMonthlyContribution()">Calculate</button>
-        <h3 id="monthlyContribution"></h3>
-        <a href="index.html">Calculate Interest</a>
+    <h1 class="header">Calculate Monthly Contribution</h1>
+    <div class="calculator-container">
+       <form class="form-container">
+            <div class="form-group principal">
+                <label for="principal">Initial Principal Amount: </label>
+                <input class="form-control" type="number" name="principal" id="principal">
+            </div>
+            <div class="form-group rate">
+                <label for="rate">Interest Rate (% / years): </label>
+                <input class="form-control" type="number" name="rate" id="rate">
+            </div>
+            <div class="form-group period">
+                <label for="period">Investment Length (years): </label>
+                <input class="form-control" type="number" name="period" id="period">
+            </div>
+            <div class="form-group expected">
+                <label for="expected">Exepcted Future Value: </label>
+                <input class="form-control" type="number" name="expected" id="expected">
+            </div>
+            <button class="button" type="button" id="calculateContribution" onclick="calculateMonthlyContribution()">Calculate</button>
+            <h3 class="result" id="monthlyContribution"></h3>
+            <i><a href="index.html">Calculate Interest</a></i>
+       </form>
     </div>
-
     <!-- Add Script -->
     <script src="script.js"></script>
 </body>
