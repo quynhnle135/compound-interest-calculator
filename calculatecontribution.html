@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Contibution Calculator</title>
+</head>
+<body>
+    <h1>Calculate Monthly Contribution</h1>
+    <div class="container">
+        <div class="row principal">
+            <label for="principal">Initial Principal Amount: </label>
+            <input type="number" name="principal" id="principal">
+        </div>
+        <div class="row rate">
+            <label for="rate">Interest Rate (%/year): </label>
+            <input type="number" name="rate" id="rate">
+        </div>
+        <div class="row period">
+            <label for="period">Investment Length (years): </label>
+            <input type="number" name="period" id="period">
+        </div>
+        <div class="row expected">
+            <label for="expected">Exepcted Future Value: </label>
+            <input type="number" name="expected" id="expected">
+        </div>
+        <button type="button" id="calculateContribution" onclick="calculateMonthlyContribution()">Calculate</button>
+        <h3 id="monthlyContribution"></h3>
+        <a href="index.html">Calculate Interest</a>
+    </div>
+
+    <!-- Add Script -->
+    <script src="script.js"></script>
+</body>
+</html>
