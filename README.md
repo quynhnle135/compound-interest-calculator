@@ -12,6 +12,6 @@
 
 
 # Screenshot of This Project:
-![interest calculate](screenshots/interest-calculate.png)
+![interest calculate](screenshots/interest-calculator.png)
 
-![monthly contribution calculate](screenshots/monthly-contribution-calculate.png)
+![monthly contribution calculate](screenshots/monthly-contribution.png)
