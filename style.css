@@ -21,6 +21,7 @@ form {
     justify-content: center;
     text-align: center;
     background-color: #FFF3C7;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .form-group {
